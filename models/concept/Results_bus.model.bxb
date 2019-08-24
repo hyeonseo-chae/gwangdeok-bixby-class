@@ -1,0 +1,6 @@
+structure (Results_bus){
+property (RESULT){
+type(RESULT)
+    min(Optional) max(Many)
+}
+}
