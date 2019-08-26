@@ -1,0 +1,24 @@
+layout-macro-def (many) {
+  
+  params {
+    param (info) {
+      type (Results_bus)
+      min (Optional) max (Many)
+    }
+  }
+  
+    
+     
+      content{
+            
+            paragraph("#{value(info.BUSSTOP_LIST.LINE_NAME)} : #{value(info.BUSSTOP_LIST.REMAIN_MIN)} 분 남았습니다."){
+              style(Title_M)
+            }
+             paragraph("ㅤ"){
+              style(Title_M)
+            }     
+   
+            }           
+ 
+
+}

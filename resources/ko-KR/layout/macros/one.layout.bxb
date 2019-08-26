@@ -1,0 +1,34 @@
+layout-macro-def (one) {
+  
+  params {
+    param (info) {
+      type (Results_bus)
+      min (Optional) max (One)
+    }
+  }
+  content {
+    section{
+      title{
+        template ("광덕고 정문 버스 정보")
+      }
+      
+      content{
+        
+        for-each(info.BUSSTOP_LIST){ 
+          as (subinfo){           
+            paragraph("#{value(subinfo.LINE_NAME)} : #{value(subinfo.REMAIN_MIN)} 분 남았습니다."){
+              style(Title_M)
+            }
+        paragraph("ㅤ"){
+              style(Title_M)
+            } 
+   
+            }           
+          }
+        }
+      
+      }
+    
+    }
+
+}

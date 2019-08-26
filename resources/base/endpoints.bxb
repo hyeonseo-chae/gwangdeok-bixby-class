@@ -6,7 +6,10 @@ endpoints {
       local-endpoint (bus.js)
     }
      
-  
+  action-endpoint (bus1) {
+      accepted-inputs ()
+      local-endpoint (bus1.js)
+    }
     }
   }
 

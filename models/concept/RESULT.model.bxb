@@ -7,12 +7,5 @@ structure (RESULT){
     type(RESULT_CODE)
     min(Optional) max(Many)
   }
-  property(BUSSTOP_LIST){
-    type(BUSSTOP_LIST)
-    min(Optional) max(Many)
-  }
-  property(ROW_COUNT){
-    type(ROW_COUNT)
-    min(Optional) max(Many)
-  }
+
 }
