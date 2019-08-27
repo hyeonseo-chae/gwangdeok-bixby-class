@@ -16,13 +16,22 @@ layout-macro-def (one) {
         
         for-each(info.BUSSTOP_LIST){ 
           as (subinfo){           
-            paragraph("#{value(subinfo.LINE_NAME)} : #{value(subinfo.REMAIN_MIN)} 분 남았습니다."){
-              style(Title_M)
-            }
-        paragraph("ㅤ"){
-              style(Title_M)
-            } 
-   
+        //     paragraph("#{value(subinfo.LINE_NAME)} : #{value(subinfo.REMAIN_MIN)} 분 남았습니다."){
+        //       style(Title_M)
+        //     }
+        // paragraph("ㅤ"){
+        //       style(Title_M)
+        //     } 
+   cell-card {
+    
+    slot2 {
+        content {
+            order (PrimarySecondary)
+            primary ("#{value(subinfo.LINE_NAME)}") // Fields of America for Fall
+            secondary ("#{value(subinfo.REMAIN_MIN)}분 남았습니다.") // $39.99 - $59.99
+        }
+    }
+}
             }           
           }
         }

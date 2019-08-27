@@ -2,12 +2,15 @@ endpoints {
   action-endpoints {
      
     action-endpoint (bus) {
-      accepted-inputs ()
+      accepted-inputs (find)
       local-endpoint (bus.js)
     }
-     
+     action-endpoint (numbers) {
+      accepted-inputs (find)
+      local-endpoint (number.js)
+    }
   action-endpoint (bus1) {
-      accepted-inputs ()
+      accepted-inputs (find)
       local-endpoint (bus1.js)
     }
     }

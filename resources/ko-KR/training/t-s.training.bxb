@@ -1,0 +1,5 @@
+train (t-suxueonoycaewzaiw1f07ihfa) {
+  utterance ("[g:bus] 버스 정류소 (찾아줘)[v:find:findby]")
+  plan (Y2BmkMwoKSlITszJ0StJLS7RC0otLs0pKY5PKi1mEESVAgkJoQqlZealMDAxMAIxA5BkZAABKB8A)
+  last-modified (1566903938333)
+}

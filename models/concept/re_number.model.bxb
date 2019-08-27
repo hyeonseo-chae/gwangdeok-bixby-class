@@ -1,0 +1,11 @@
+structure (re_number){
+  
+property (number){
+type(number)
+min(Optional) max(Many)
+}
+  property (text){
+type(text)
+min(Optional) max(Many)
+}
+}

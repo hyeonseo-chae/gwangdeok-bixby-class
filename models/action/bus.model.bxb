@@ -1,6 +1,9 @@
 action(bus) {
   collect{
-    
+    input (find) {
+      type (find)
+      min (Optional) max (One)
+    }
   }
  description (__DESCRIPTION__)
  type(Constructor)

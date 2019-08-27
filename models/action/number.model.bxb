@@ -1,4 +1,4 @@
-action(bus1) {
+action(numbers) {
   collect{
     
     input (find) {
@@ -10,5 +10,5 @@ action(bus1) {
 
  description (__DESCRIPTION__)
  type(Constructor)
- output(Results_bus)
+ output(re_number)
 }
